@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = ':paulywill'
-export const siteTitle = 'TDD Books'
+export const siteTitle = 'Test-Driven Development (TDD) Book Catalog'
 
 
 export default function Layout({ children, home }) {
