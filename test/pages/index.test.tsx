@@ -1,14 +1,28 @@
 import React from 'react'
-import { render, fireEvent } from '../testUtils'
+import { render, fireEvent, screen } from '../testUtils'
 import { Home } from '../../pages/index'
+import '@testing-library/jest-dom/extend-expect'
+
+//describe('App', () => {
+//test('renders App component', () => {
+//render(<Home />);
+//screen.debug();
+//});
+//});
 
 describe('Home page', () => {
-  it('matches snapshot', () => {
+  test('matches snapshot', () => {
     const { asFragment } = render(<Home />, {})
     expect(asFragment()).toMatchSnapshot()
   })
 
-  it('clicking button triggers alert', () => {
+  test('title is correct', () => {
+    render(<Home />)
+    expect(screen.getByText(/Welcome/)).toBeInTheDocument()
+    expect(screen.getByRole('heading')).toBeInTheDocument()
+  })
+
+  test('clicking button triggers alert', () => {
     const { getByText } = render(<Home />, {})
     window.alert = jest.fn()
     fireEvent.click(getByText('Test Button'))
