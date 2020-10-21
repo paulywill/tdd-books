@@ -15,14 +15,7 @@ exports[`Home page matches snapshot 1`] = `
       </h1>
       <p
         class="jsx-2250570153 description"
-      >
-        Get started by editing 
-        <code
-          class="jsx-2250570153"
-        >
-          pages/index.tsx
-        </code>
-      </p>
+      />
       <button
         class="jsx-2250570153"
       >
@@ -32,19 +25,7 @@ exports[`Home page matches snapshot 1`] = `
     <footer
       class="jsx-2250570153"
     >
-      <a
-        class="jsx-2250570153"
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Powered by 
-        <img
-          alt="Vercel Logo"
-          class="jsx-2250570153 logo"
-          src="/vercel.svg"
-        />
-      </a>
+      Powered by ☕ , 🎧, , 🤓
     </footer>
   </div>
 </DocumentFragment>
