@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Login from '../components/login'
 
 export const Home = (): JSX.Element => (
   <div className="container">
@@ -6,7 +7,9 @@ export const Home = (): JSX.Element => (
       <title>TDD Books</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
+    <header>
+      <Login />
+    </header>  
     <main>
       <h1 className="title">Welcome to TDD Books!</h1>
 
